@@ -66,3 +66,80 @@ GitHub → CodePipeline → CodeBuild → Deployment
 The backend is implemented as a **Flask REST API** and deployed to Elastic Beanstalk.
 
 Example endpoints:
+
+- GET /events
+- POST /events
+
+
+The backend performs the following operations:
+
+- Accepts requests from the frontend application
+- Executes database queries using PyMySQL
+- Formats responses as JSON
+- Returns data to the client application
+
+---
+
+## Database Layer
+
+Application data is stored in a **MySQL database hosted on Amazon RDS**.
+
+The backend connects to the database using environment variables configured in the Elastic Beanstalk environment.
+
+The database provides:
+
+- persistent storage
+- managed backups
+- high availability
+
+---
+
+## Continuous Integration and Deployment (CI/CD)
+
+Deployment is automated using AWS CodePipeline and CodeBuild.
+
+Pipeline workflow:
+
+1. Code changes are pushed to GitHub.
+2. CodePipeline detects repository updates.
+3. CodeBuild builds the application artifacts.
+4. Frontend assets deploy to Amazon S3.
+5. Backend application deploys to Elastic Beanstalk.
+6. Logs are stored in Amazon S3.
+
+---
+
+## Deployment Proof
+
+### Amazon S3 Static Website
+
+![S3 Static Site](screenshots/s3_static_site.png)
+
+---
+
+### Elastic Beanstalk Backend Environment
+
+![Elastic Beanstalk](screenshots/beanstalk_dashboard.png)
+
+---
+
+### Amazon RDS MySQL Database
+
+![RDS Instance](screenshots/rds_instance.png)
+
+---
+
+### CI/CD Pipeline Execution
+
+![CodePipeline](screenshots/codepipeline_success.png)
+
+---
+
+### API Endpoint Response
+
+![API Response](screenshots/api_response.png)
+
+---
+
+## Repository Structure
+
