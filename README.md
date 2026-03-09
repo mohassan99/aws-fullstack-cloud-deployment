@@ -125,7 +125,7 @@ Pipeline workflow:
 
 ### Amazon RDS MySQL Database
 
-![RDS Instance](G:/Other computers/My Laptop\Documents/MCS-DS/2025-01 CS498 Cloud Computing Applications/aws-fullstack-cloud-deployment/rds_instance.png)
+![RDS Instance](G:/Other computers/My Laptop\Documents/MCS-DS/2025-01 CS498 Cloud Computing Applications/aws-fullstack-cloud-deployment/screenshots/rds_instance.png)
 
 ---
 
