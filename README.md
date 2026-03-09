@@ -140,6 +140,3 @@ Pipeline workflow:
 ![API Response](screenshots/api_response.png)
 
 ---
-
-## Repository Structure
-
